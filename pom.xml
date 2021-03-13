@@ -28,9 +28,25 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
+				<version>3.6.3</version>
 				<extensions>true</extensions>
 				<configuration>
+				<cloudHubDeployment>
+				<uri>https://anypoint.mulesoft.com</uri>
+				<muleVersion>4.3.0</muleVersion>
+				<username>ManishKumar123</username>
+				<password>Manish123</password>
+				<businessGroup>Tech Mahindra</businessGroup>
+				<applicationName>worldTimeZone-mini-app</applicationName>
+				<environment>Sandbox</environment>
+				<region>us-east-1</region>
+				<workers>1</workers>
+				<workerType>MICRO</workerType>
+				<objectStoreV2>false</objectStoreV2>
+				<properties>
+				<key>value</key>
+				</properties>
+				</cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
