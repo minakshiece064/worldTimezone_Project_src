@@ -1,3 +1,19 @@
 {
-  "minMuleVersion": "4.3.0"
+  "configs": [
+    "world-mini-api.xml"
+  ],
+  "redeploymentEnabled": true,
+  "name": "world-mini-api",
+  "minMuleVersion": "4.3.0",
+  "requiredProduct": "MULE_EE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedResources": []
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
 }

@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mycompany</groupId>
@@ -28,23 +27,23 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>3.6.3</version>
+				<version>3.3.5</version>
 				<extensions>true</extensions>
 				<configuration>
 				<cloudHubDeployment>
 				<uri>https://anypoint.mulesoft.com</uri>
-				<muleVersion>4.3.0</muleVersion>
-				<username>ManishKumar123</username>
-				<password>Manish123</password>
+				<server>mycloudhubdetails</server>
 				<businessGroup>Tech Mahindra</businessGroup>
 				<applicationName>worldTimeZone-mini-app</applicationName>
+				<muleVersion>4.3.0</muleVersion>
 				<environment>Sandbox</environment>
 				<region>us-east-1</region>
 				<workers>1</workers>
 				<workerType>MICRO</workerType>
-				<objectStoreV2>false</objectStoreV2>
+				<objectStoreV2>true</objectStoreV2>
 				<properties>
-				<key>value</key>
+				  <anypoint.platform.client_id>25f70ed2a3404672bc85ef86c08abbee</anypoint.platform.client_id>
+				<anypoint.platform.secret>639bae520b354c3BA9d9EF79D7adFC05</anypoint.platform.secret>
 				</properties>
 				</cloudHubDeployment>
 				</configuration>
